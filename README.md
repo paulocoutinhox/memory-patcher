@@ -56,7 +56,7 @@ build\Debug\mempatcher.exe
 
 ```
 Enter the process name (e.g., notepad.exe or light-hack-demo): myapp
-Enter the memory address (hex format, e.g., 12345678): 0x14982AA00
+Enter the memory address (hex format, e.g., 0x12345678): 0x14982AA00
 
 Choose the data type to write:
 1. 8-bit Integer
