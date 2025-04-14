@@ -21,7 +21,7 @@ clean:
 
 build:
 	rm -rf build
-	cmake -B build -H.
+	cmake -B build .
 	cmake --build build
 
 run:
