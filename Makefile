@@ -15,6 +15,9 @@ help:
 format:
 	find -E src/ -regex '.*\.(cpp|hpp|cc|cxx|c|h)' -exec clang-format -style=file -i {} \;
 
+windows-format:
+	powershell -Command "Get-ChildItem -Path src -Recurse -Include *.cpp,*.hpp,*.cc,*.cxx,*.c,*.h | ForEach-Object { clang-format -style=file -i $$_.FullName }"
+
 clean:
 	rm -rf build
 	find . -name ".DS_Store" -delete

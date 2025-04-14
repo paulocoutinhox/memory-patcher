@@ -11,10 +11,11 @@
 #define NOMINMAX
 #endif
 
-// Windows doesn't have pid_t, so define it
-typedef DWORD pid_t;
 #include <windows.h>
 #include <tlhelp32.h>
+
+// Windows doesn't have pid_t, so define it
+typedef DWORD pid_t;
 
 #elif defined(__APPLE__)
 
