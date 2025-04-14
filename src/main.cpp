@@ -1,14 +1,14 @@
+#include <algorithm>
 #include <cstdint>
 #include <iostream>
 #include <limits>
 #include <string>
 #include <vector>
-#include <algorithm>
 
 #if defined(_WIN32)
 
-#include <tlhelp32.h>
 #include <windows.h>
+#include <tlhelp32.h>
 
 #elif defined(__APPLE__)
 
@@ -27,8 +27,8 @@ extern "C"
 #include <cstring>
 #include <dirent.h>
 #include <fstream>
-#include <sys/uio.h>
 #include <sys/types.h>
+#include <sys/uio.h>
 #include <unistd.h>
 
 #endif
