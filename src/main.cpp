@@ -26,9 +26,8 @@ extern "C"
 #include <cstring>
 #include <dirent.h>
 #include <fstream>
-#include <sys/process_vm_readv.h>
-#include <sys/types.h>
 #include <sys/uio.h>
+#include <sys/types.h>
 #include <unistd.h>
 
 #endif
