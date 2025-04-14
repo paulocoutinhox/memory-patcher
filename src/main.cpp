@@ -3,6 +3,7 @@
 #include <limits>
 #include <string>
 #include <vector>
+#include <algorithm>
 
 #if defined(_WIN32)
 
