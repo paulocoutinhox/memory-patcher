@@ -6,7 +6,13 @@
 #include <vector>
 
 #if defined(_WIN32)
+// Prevent min/max macro conflicts
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
 
+// Windows doesn't have pid_t, so define it
+typedef DWORD pid_t;
 #include <windows.h>
 #include <tlhelp32.h>
 
@@ -254,7 +260,12 @@ int main()
     int choice;
     std::cin >> choice;
     std::cin.clear();
+#if defined(_WIN32)
+    // Prevent conflict with Windows max macro
+    std::cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
+#else
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+#endif
 
     // Find the process by name
     pid_t pid = getPidByName(processName);
