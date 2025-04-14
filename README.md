@@ -2,6 +2,8 @@
 
 This project is a cross-platform C++ utility to patch (overwrite) memory values of a running process by name and memory address.
 
+[![Build](https://github.com/paulocoutinhox/memory-patcher/actions/workflows/build.yml/badge.svg)](https://github.com/paulocoutinhox/memory-patcher/actions/workflows/build.yml)
+
 ## 🧠 Overview
 
 This program allows you to:
